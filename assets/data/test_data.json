@@ -1,0 +1,422 @@
+{
+  "data": [
+    {
+      "subject_name": "Dart",
+      "easy_test":  [
+        {
+          "question_text": " Savol: Dart tilida o'zgaruvchilar qanday e'lon qilinadi?",
+          "v1": "O'zgaruvchi shunchaki e'lon qilishda tenglik bilan una qiymat berib ketiladi",
+          "v2": "o'zgaruvchi nomidan keyi unga tip berib ketiladi va qiymat",
+          "v3": "Siz dart dasturlash tilida o'zgaruvchi e'lon qila olmaysz",
+          "v4": "O'zgaruvchilarni e'lon qilish uchun ularning turi va nomi ko'rsatilishi kerak. Masalan, int, double, String kabi turdagi o'zgaruvchilar e'lon qilish mumkin, misol uchun: int yosh = 25;\n",
+          "vtrue": 4
+        },
+        {
+          "question_text": "Savol: Dart tilida list (ro'yxat) qanday yaratiladi? ",
+          "v1": "String mevalar = ['olma', 'anjir', 'banan'];\n   \n",
+          "v2": "   List<String> mevalar = ['olma', 'anjir', 'banan'];\n   \n",
+          "v3": "   List<int> mevalar = ['olma', 'anjir', 'banan'];\n   \n",
+          "v4": "Barcha javooblar to'g'ri",
+          "vtrue": 2
+        },
+        {
+          "question_text": " Dart tilida for tsikli qanday ishlatiladi?",
+          "v1": "   for (int i = 1; i <= 5; i++) {\n      print('Salam!');\n   }\n   \n",
+          "v2": "   for (i = 1; i <= 5; i++) {\n      print('Salam!');\n   }\n   \n",
+          "v3": "   for (int i = 1; i <= 5;) {\n      print('Salam!');\n   }\n   \n",
+          "v4": "   for (int i = 1;i++) {\n      print('Salam!');\n   }\n   \n",
+          "vtrue": 1
+        }
+      ],
+      "medium_test":  [
+        {
+          "question_text": " Dart tilida funksiya yaratish qanday amaldir? ",
+          "v1": "   void () {\n      print('Salom, dunyo!');\n   }\n   \n",
+          "v2": "   void salom() {\n      print(Salom, dunyo!);\n   }\n   \n",
+          "v3": "   void salom() {\n      print('Salom, dunyo!');\n   }\n   \n",
+          "v4": "   void salom()       print('Salom, dunyo!');\n    \n",
+          "vtrue": 3
+        },
+        {
+          "question_text": " Dart tilida klass yaratish qanday qilinadi?",
+          "v1": "   class Shaxs {\n      String ism;\n      int yosh;\n\n      void salomBer() {\n         print('Salom, $ism! Yosh: $yosh');\n      }\n   }\n   \n ",
+          "v2": "   class  {\n      String ism;\n      int yosh;\n\n      void salomBer() {\n         print('Salom, $ism! Yosh: $yosh');\n      }\n   }\n   \n",
+          "v3": "int y = new int;",
+          "v4": "    Shaxs {\n      String ism;\n      int yosh;\n\n      void salomBer() {\n         print('Salom, $ism! Yosh: $yosh');\n      }\n   }\n   \n",
+          "vtrue": 1
+        },
+        {
+          "question_text": "Dart tilida try-catch qanday ishlatiladi?",
+          "v1": "   try {\n      // Potensial xatolikka olib keladigan kodlar\n      int son = 10 ~/ 0;  // Bo'lish amalida xato yuz beradi\n   } (e) {\n      // Xatolik yuz berish holatida bajariladigan kodlar\n      print('Xatolik yuz berdi: $e');\n   }\n   \n",
+          "v2": "   {\n      // Potensial xatolikka olib keladigan kodlar\n      int son = 10 ~/ 0;  // Bo'lish amalida xato yuz beradi\n   } catch (e) {\n      // Xatolik yuz berish holatida bajariladigan kodlar\n      print('Xatolik yuz berdi: $e');\n   }\n   \n",
+          "v3": "   try {\n      // Potensial xatolikka olib keladigan kodlar\n      int son = 10 ~/ 0;  // Bo'lish amalida xato yuz beradi\n   } catch (e) {\n      // Xatolik yuz berish holatida bajariladigan kodlar\n      print('Xatolik yuz berdi: $e');\n   }\n   \n",
+          "v4": "   try {\n      // Potensial xatolikka olib keladigan kodlar\n      int son = 10 ~/ 0;  // Bo'lish amalida xato yuz beradi\n   } catch  {\n      // Xatolik yuz berish holatida bajariladigan kodlar\n      print('Xatolik yuz berdi: $e');\n   }\n   \n",
+          "vtrue": 3
+        }
+      ],
+      "hard_test":  [
+        {
+          "question_text": "Dart tilida qanday konstruktorlar yaratiladi?",
+          "v1": "Dartda constructor degan tushuncha yo'q",
+          "v2": "Konstruktorlar faqat klass nomi  bilan yaratiladi.",
+          "v3": "Konstruktorlar faqat  argumentlar va qavatlardan tashkil topgan bloklar bilan yaratiladi.",
+          "v4": "Konstruktorlar klass nomi bilan, argumentlar va qavatlardan tashkil topgan bloklar bilan yaratiladi.",
+          "vtrue": 4
+        },
+        {
+          "question_text": "Dart tilida \"Future\" sinfi asinxronning classi",
+          "v1": "Future<ReturnType> functionName(Arguments) {\n  // Amalga oshiriladigan kodlar\n}\n",
+          "v2": "<ReturnType> functionName(Arguments) {\n  // Amalga oshiriladigan kodlar\n}\n ",
+          "v3": "Future<ReturnType>  {\n  // Amalga oshiriladigan kodlar\n}\n",
+          "v4": "Future<ReturnType> functionName {\n  // Amalga oshiriladigan kodlar\n}\n",
+          "vtrue": 1
+        },
+        {
+          "question_text": "Dart tilida Streemning siystaksisi qanaqa ",
+          "v1": "import 'dart:async';\nimport 'dart:io';\n\nvoid main() async {\n  var file = File('file.txt');\n  var stream = file.openRead();\n\n  await for (var line in stream.transform(utf8.decoder)) {\n    print('Qator: $line');\n  }\n}\n",
+          "v2": "import 'dart:async';\nimport 'dart:io';\n\nvoid main() async {\n  var file = File('file.txt');\n  var stream = file.openRead();\n\n   for (var line in stream.transform(utf8.decoder)) {\n    print('Qator: $line');\n  }\n}\n ",
+          "v3": "import 'dart:async';\nimport 'dart:io';\n\nvoid main() async {\n  var file = File('file.txt');\n  var stream = file.openRead();\n\n  await for (var line in transform(utf8.decoder)) {\n    print('Qator: $line');\n  }\n}\n",
+          "v4": "import 'dart:async';\nimport 'dart:io';\n\nvoid main() async {\n  var file = File('file.txt');\n  var stream = file.openRead();\n\n  await for (var line in stream.(utf8.decoder)) {\n    print('Qator: $line');\n  }\n}\n",
+          "vtrue": 1
+        }
+      ],
+      "description": "Har bir test savollarida 4 donadan variant bor . Siz ulardan bittasini tanlash huquqiga egasiz va har bitta test savoli uchun sizga 15 soniya vaqt beriladi ,agar siz belgilangan vaqtda testni tugata olmasangiz test yukunlanadi va belgilanmagan savollar hato deb topiladi",
+      "icon": "assets/images/dart_icon.png"
+
+    },
+    {
+      "subject_name": "Flutter",
+      "easy_test":  [
+        {
+          "question_text": "Flutter qaysi dasturlash tilining frameworki xisoblanadi",
+          "v1": "python",
+          "v2": "Java",
+          "v3": "C",
+          "v4": "Dart",
+          "vtrue": 4
+        },
+        {
+          "question_text": "Flutter orqali biz qaysi platformalarga App tuza olamiz ",
+          "v1": "Faqat web uchun",
+          "v2": "Faqat Android",
+          "v3": "Android va IOS uchun asosan",
+          "v4": "Faqat IOS",
+          "vtrue": 3
+        },
+        {
+          "question_text": "Flutterda qasyi method screenni qurib beradi StetFullda ",
+          "v1" : "initState",
+          "v2": "build",
+          "v3": "init",
+          "v4": "deactivate",
+          "vtrue": 2
+        }
+      ],
+      "medium_test":  [
+        {
+          "question_text":"Flutter da widget nima? ",
+          "v1": "Flutterda \"widget\" dasturlash tilida UI elementlarni, uslublarni, funktsiyalarni, oʻzgaruvchilarni va boshqa ilovalarga oid komponentlarni anglatadi. Har bir Flutter ilovasi asosan bir yoki bir nechta widgetlardan iborat boʻladi. Matn, tugma, rasm, roʻyxat, sahna va hokazo widgetlar mavjud boʻladi.",
+          "v2": "oddiy screen qurishga yordam beradigan funksiya",
+          "v3": "Flutterda \"widget\" dasturlash tilida UX elementlarni, uslublarni, funktsiyalarni, oʻzgaruvchilarni va boshqa ilovalarga oid komponentlarni anglatadi.",
+          "v4": "UX dagi oddiy element",
+          "vtrue": 1
+        },
+        {
+          "question_text": " Flutterda qanday animatsiyalar yaratish mumkin? ",
+          "v1": "Flutter orqali animatsiyalar yaratish uchun sizga o'zida animatsiyalar tuzish imkoniyati mavjud bo'lgan bir nechta maxsus methodlar taqdim etilgan.",
+          "v2": "Flutter orqali animatsiyalar yaratish uchun sizga o'zida animatsiyalar tuzish imkoniyati mavjud bo'lgan bir nechta maxsus wigetlar taqdim etilgan.",
+          "v3": "Flutter orqali animatsiyalar yaratish uchun sizga o'zida animatsiyalar tuzish imkoniyati mavjud bo'lgan bir nechta maxsus funksiyalar taqdim etilgan.",
+          "v4": "Biz Flutterda animotsiyalardan foydalana olmaymiz",
+          "vtrue": 2
+        },
+        {
+          "question_text":" Vaqtinchalik saqlash uchun Flutterda qanday ma'lumotlar bazasidan foydalanish mumkin?",
+          "v1": "Flutterda lokal ma'lumotlar bazasidan, masalan, faqat Firebase'idan foydalanish mumkin.",
+          "v2": "Ma'lumotlarni saqlashda FireBase yo'q",
+          "v3": "Flutterda lokal ma'lumotlar bazasidan, masalan, SQLite yoki Firebase'idan foydalanish mumkin.",
+          "v4": "Flutterda lokal ma'lumotlar bazasidan, masalan, Faqat SQLite foydalanish mumkin.",
+          "vtrue": 3
+        }
+      ],
+      "hard_test":  [
+        {
+          "question_text": "StatefulWidget va StatelessWidget orasidagi farq qanday?",
+          "v1": "StetFullWidget widget,StetLessWidget u method",
+          "v2": "StatefulWidget, oʻzgaruvchilarning holati va UI laridagi oʻzgarishlarni oʻz ichiga oladi va qayta-engishlaydi. Biroq StatelessWidget faqatgina statik tarkibdagi elemenalar ichun ishlatiladi va oʻzgaruvchilarni qayta-engishlaydi.\n",
+          "v3": "Farqi yo'q ",
+          "v4": "StateLessWidget, oʻzgaruvchilarning holati va UI laridagi oʻzgarishlarni oʻz ichiga oladi va qayta-engishlaydi. Biroq StateFullWidget faqatgina statik tarkibdagi elemenalar ichun ishlatiladi va oʻzgaruvchilarni qayta-engishlaydi.\n",
+          "vtrue": 2
+        },
+        {
+          "question_text": "Flutter da \"Hot reload\" nima?",
+          "v1": "\"Hot reload\" - bu Flutter maʼlum bir proyektni yana-yana kuchaytirish usuli, yangi kod boʻlganda oʻrnatiladi va ilovaning ishlayotgan dasturidan oʻrmaga oʻrnatish talab qilmaydi.\n",
+          "v2": " U bir nechta o'zgaruvchanlardan tashkil topuvchi ma'lumotlar to'plamidir. Massivda har bir ma'lumotga indeks bo'yicha qulaylik bilan murojat qilinish mumkin.",
+          "v3": "Oddiy StetFulllWidget",
+          "v4": "Screenni qurishga yordam beruvchi funksiya",
+          "vtrue": 1
+        },
+        {
+          "question_text": " Flutterda asinxron ishlash qanday amalga oshiriladi?",
+          "v1": "Tayyor o'zini funkiyalari orqali hech qanday kalit so'z kerak emas",
+          "v2": "Fulture funksiyasidan foydalaniladi",
+          "v3": "\"cin\" operatori orqali konsoldan bitta so'z yoki raqam o'qiladi, \"getline\" esa matnni to'liq qabul qilib o'qiladi.",
+          "v4": "Flutterda asinxron ishlash uchun async va await kalit soʻzlaridan foydalanish mumkin. Bu usul orqali toʻxtovsiz ishlash amalga oshiriladi va bogʻliq funktsiyalarning natijalarni kutish va ular ishlangandan keyin bajarmoq mumkin.",
+          "vtrue": 4
+        }
+      ],
+      "description": "Har bir test savollarida 4 donadan variant bor . Siz ulardan bittasini tanlash huquqiga egasiz va har bitta test savoli uchun sizga 15 soniya vaqt beriladi ,agar siz belgilangan vaqtda testni tugata olmasangiz test yukunlanadi va belgilanmagan savollar hato deb topiladi",
+      "icon": "assets/images/flutter_icon.png"
+
+    },
+    {
+      "subject_name": "C++",
+      "easy_test":  [
+        {
+          "question_text": " C++ tili qaysi til asosida yozilgan ",
+          "v1": "python",
+          "v2": "Java",
+          "v3": "C",
+          "v4": "dart",
+          "vtrue": 3
+        },
+        {
+          "question_text": " C++ tilida 'count' operatori nima vazifani bajaradi ",
+          "v1": "consulga matnni chiqarish",
+          "v2": "o'zgaruvchi e'lon qilish",
+          "v3": "sonning ildizini topish",
+          "v4": "sonni darajaga ko'tarish",
+          "vtrue": 1
+        },
+        {
+          "question_text": " C++ tili if operatori nima vazifani bajaradi ",
+          "v1": "for loop bilan bir xil vazifa bajaradi",
+          "v2": "shart tekshiradi",
+          "v3": "siklni to'xtatish vazifasini bajaradi",
+          "v4": "o'zgaruvching tipini aniqlaydi",
+          "vtrue": 2
+        }
+      ],
+      "medium_test":  [
+        {
+          "question_text": " C++ tili switch ning vazifasi ",
+          "v1": "for loop bilan bir xil vazifa bajaradi",
+          "v2": "if kabi case orqali shart tekshiradi",
+          "v3": "siklni to'xtatish vazifasini bajaradi",
+          "v4": "o'zgaruvching tipini aniqlaydi",
+          "vtrue": 2
+        },
+        {
+          "question_text": "C++ da \"new\" operatori qanday ishlatiladi? ",
+          "v1": "int* y = new int; ",
+          "v2": "int* y = new int",
+          "v3": "int y = new int;",
+          "v4": "int  = new int;",
+          "vtrue": 1
+        },
+        {
+          "question_text": "  C++ da \"const\" kalit so'zi nima ma'noni anglatadi? ",
+          "v1": " \"const\" kalit so'zi o'zgaruvchini o'zgarmas qiladi, ya'ni o'zgartirib bo'lmaydigan qiymat beradi.",
+          "v2": "\"const\" kalit so'zi o'zgaruvchini elon qiladi",
+          "v3": "siklni to'xtatish vazifasini bajaradi",
+          "v4": "o'zgaruvching tipini aniqlaydi",
+          "vtrue": 1
+        }
+      ],
+      "hard_test":  [
+        {
+          "question_text": "C++ da \"return\" kalit so'zi qanday ishlatiladi?",
+          "v1": "int kvadrat(int son) { return son * son;}",
+          "v2": "int kvadrat(int ) { return son * son;}",
+          "v3": "int kvadrat(int son) return son * son;}",
+          "v4": "int kvadrat(int son) { return son * son}",
+          "vtrue": 1
+        },
+        {
+          "question_text": " : C++ dasturlash tilida massiv nima",
+          "v1": "Binar daraxt ko'rinishidagi ma'lumotlar tuzilmasi",
+          "v2": " Massiv C++ dasturlash tilidagi katta ma'lumotlar yig'inishidir. U bir nechta o'zgaruvchanlardan tashkil topuvchi ma'lumotlar to'plamidir. Massivda har bir ma'lumotga indeks bo'yicha qulaylik bilan murojat qilinish mumkin.",
+          "v3": "tartiblanmagan asotativ Contener",
+          "v4": "kutubxona",
+          "vtrue": 2
+        },
+        {
+          "question_text": " C++ da \"cin\" va \"getline\" orasidagi asosiy farq nima?",
+          "v1": "\"getline\" operatori orqali konsoldan bitta so'z yoki raqam o'qiladi, \"cin\" esa matnni to'liq qabul qilib o'qiladi.",
+          "v2": "Farq qilmaydi ",
+          "v3": "\"cin\" operatori orqali konsoldan bitta so'z yoki raqam o'qiladi, \"getline\" esa matnni to'liq qabul qilib o'qiladi.",
+          "v4": "nomi bilan farq qiladi xalos",
+          "vtrue": 3
+        }
+      ],
+      "description": "Har bir test savollarida 4 donadan variant bor . Siz ulardan bittasini tanlash huquqiga egasiz va har bitta test savoli uchun sizga 15 soniyadan vaqt beriladi ,agar siz belgilangan vaqtda testni tugata olmasangiz test yukunlanadi va belgilanmagan savollar hato deb topiladi",
+      "icon": "assets/images/img_1.png"
+
+    },
+    {
+      "subject_name": "Python",
+      "icon": "assets/images/img_3.png",
+      "description": "Har bir test savollarida 4 donadan variant bor . Siz ulardan bittasini tanlash huquqiga egasiz va har bitta test savoli uchun sizga 15 soniyadan vaqt beriladi ,agar siz belgilangan vaqtda testni tugata olmasangiz test yukunlanadi va belgilanmagan savollar hato deb topiladi",
+      "medium_test":  [
+        {
+          "question_text": "Algoritm necha xil usulda beriladi",
+          "v1": "1",
+          "v2": "4",
+          "v3": "2",
+          "v4": "7",
+          "vtrue": 3
+        },
+        {
+          "question_text": " Pythonda dasturda noto‘gri joy ajratilgan dastur nomini aniqlang.",
+          "v1": "unexpected indent",
+          "v2": "Name indent ",
+          "v3": "invalid syntax ",
+          "v4": "Syntax indent",
+          "vtrue": 1
+        },
+        {
+          "question_text": "Pythonda matnni terishda xatolik borligin qaysi dastur aniqlaydi.",
+          "v1": " unexpected indent",
+          "v2": "invalid syntax ",
+          "v3": "Name indent",
+          "v4": "Syntax indent",
+          "vtrue": 2
+        }
+      ],
+      "hard_test":  [
+        {
+          "question_text": "Pythonda “bool()” ma’lumotlar turini aniqlang. ",
+          "v1": "Satrli",
+          "v2": "Haqiqiy",
+          "v3": "Butun",
+          "v4": "Mantiqiy",
+          "vtrue": 4
+        },
+        {
+          "question_text": " Pythonda ‘input()’ operatorini aniqlang.",
+          "v1": "Ayrish operatori",
+          "v2": "Chiqarish operatori",
+          "v3": "Kiritish operatori",
+          "v4": "Kopaytirish operatori",
+          "vtrue": 3
+        },
+        {
+          "question_text": "Pythonda ‘type()’ funksiyasi aniqlang.",
+          "v1": "O‘zgaruvchi qabul qilgan qiymat turini aniqlaydi ",
+          "v2": "O’zgaruvchini satirga almashtiradi",
+          "v3": "O’zgaruvchini boshqa o‘zgaruvchiga qo’shadi",
+          "v4": "O’zgaruvchini joyini aniqlaydi",
+          "vtrue": 1
+        }
+      ],
+      "easy_test":  [
+        {
+          "question_text": " Python dasturlash tilida boolean ma'lumot turi qaysi ikkala qiymatni o'z ichiga oladi?",
+          "v1": " 0 va 2",
+          "v2": "false va true",
+          "v3": "ha va yo'q",
+          "v4": "rost va yolg'on",
+          "vtrue": 2
+        },
+        {
+          "question_text": " Python dasturlash tili ishlashida loop ichida qanday operator ishlatiladi? ",
+          "v1": "int",
+          "v2": "def",
+          "v3": "not",
+          "v4": "for",
+          "vtrue": 4
+        },
+        {
+          "question_text": "Python dasturlash tilida list degan obyekt qanday belgilanadi? ",
+          "v1": "lst=[]",
+          "v2": "lst={}",
+          "v3": "lst=()",
+          "v4": "lst=//",
+          "vtrue": 1
+        }
+      ]
+    },
+    {
+      "subject_name": "Java",
+      "icon": "assets/images/img_2.png",
+      "description": "Har bir test savollarida 4 donadan variant bor . Siz ulardan bittasini tanlash huquqiga egasiz va har bitta test savoli uchun sizga 15 soniyadan vaqt beriladi ,agar siz belgilangan vaqtda testni tugata olmasangiz test yukunlanadi va belgilanmagan savollar hato deb topiladi",
+      "easy_test":  [
+        {
+          "question_text": " Java tilida \"Hello, World!\" deb yozilgan dastur qanday ko'rinishda yoziladi?",
+          "v1": "public class  {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}\n",
+          "v2": "public  HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}\n",
+          "v3": "public class HelloWorld {\n    public static void main(String[] args) {\n        System.out.printf(\"Hello, World!\");\n    }\n}\n",
+          "v4": "public class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}\n",
+          "vtrue": 4
+        },
+        {
+          "question_text": " Java tilida sonlar orasida bo'lib, bir nechta sonlar yig'indisini hisoblash uchun dastur qanday yoziladi?",
+          "v1": "public class  {\n    public static void main(String[] args) {\n        int a = 5;\n        int b = 10;\n        int sum = a + b;\n        System.out.println(\"Yig'indisi: \" + sum);\n    }\n}\n",
+          "v2": "public class SumOfNumbers {\n    public static void main( {\n        int a = 5;\n        int b = 10;\n        int sum = a + b;\n        System.out.println(\"Yig'indisi: \" + sum);\n    }\n}\n",
+          "v3": "public class SumOfNumbers {\n    public static void main(String[] args) {\n        int a = 5;\n        int b = 10;\n        int sum = a + b;\n        System.out.println(\"Yig'indisi: \" + sum);\n    }\n}\n",
+          "v4": "public class SumOfNumbers {\n    public static void main(String[] args) {\n        int a = 5;\n        int b = 10;\n        int sum = a + b;\n        System.println(\"Yig'indisi: \" + sum);\n    }\n}\n",
+          "vtrue": 3
+        },
+        {
+          "question_text": " Java tilida if-else operatorini qo'llash orqali har xil shartlara qarab, dasturda qanday amallar bajarilishi mumkin?",
+          "v1": "public class PositiveNegative {\n    public static void main(String[] args) {\n        int number = 10;\n\n        if (number > 0) {\n            System.out.println(\"Munosib son\");\n        } else if (number < 0) {\n            System.out.println(\"Manfiy son\");\n        } else {\n            System.out.printf(\"Nol\");\n        }\n    }\n}\n",
+          "v2": "public class PositiveNegative {\n    public static void main(String[] args) {\n        int number = 10;\n\n        if (number > 0) {\n            System.out.println(\"Munosib son\");\n        } else if (number < 0) {\n            System.out.println(\"Manfiy son\");\n        } else {\n            System.out.println(\"Nol\");\n        }\n    }\n}\n",
+          "v3": "public class PositiveNegative {\n    public static void main(String[] args) {\n        int number = 10;\n\n        if (number > 0) {\n            System.out.println(\"Munosib son\");\n        } if (number < 0) {\n            System.out.println(\"Manfiy son\");\n        } else {\n            System.out.println(\"Nol\");\n        }\n    }\n}\n",
+          "v4": "public class PositiveNegative {\n    public static void main(String[] args) {\n        int number = 10;\n\n        if (number > 0) {\n            System.out.println(\"Munosib son\");\n        } else if (number < 0) {\n            System.out.println(\"Manfiy son\");\n        } if {\n            System.out.println(\"Nol\");\n        }\n    }\n}\n",
+          "vtrue": 2
+        }
+      ],
+      "medium_test":  [
+        {
+          "question_text": " Java’da 'for' tsikli nima uchun ishlatiladi va uni qanday sintaksisi mavjud?\n'for' tsikli, biror amalni belgilangan son bo'yicha bir necha marta takrorlash uchun ishlatiladi. ",
+          "v1": "for (initialization; condition; update) {\n    // code to be executed\n}\n",
+          "v2": "for (condition; update) {\n    // code to be executed\n}\n",
+          "v3": "for (initialization; update) {\n    // code to be executed\n}\n",
+          "v4": "for (initialization; condition) {\n    // code to be executed\n}\n",
+          "vtrue": 1
+        },
+        {
+          "question_text": "Java tilida bir listni (ro'yxatni) qanday yaratish mumkin?\nJava tilida listni yaratish uchun ArrayList yoki LinkedList kabi ma'lumot turi obyektlaridan foydalanish mumkin. ",
+          "v1": "import java.util.ArrayList;\n\npublic class ListExample {\n    public static void main(String[] args) {\n        ArrayList<String> = new ArrayList<String>();\n\n        // Ro'yxatga elementlarni qo'shamiz\n        myList.add(\"element 1\");\n        myList.add(\"element 2\");\n        myList.add(\"element 3\");\n\n        // Ro'yxatni chiqaramiz\n        System.out.println(myList);\n    }\n}\n ",
+          "v2": "import java.util.ArrayList;\n\npublic class ListExample {\n    public static void {\n        ArrayList<String> myList = new ArrayList<String>();\n\n        // Ro'yxatga elementlarni qo'shamiz\n        myList.add(\"element 1\");\n        myList.add(\"element 2\");\n        myList.add(\"element 3\");\n\n        // Ro'yxatni chiqaramiz\n        System.out.println(myList);\n    }\n}\n",
+          "v3": "import java.util\n\npublic class ListExample {\n    public static void main(String[] args) {\n        ArrayList<String> myList = new ArrayList<String>();\n\n        // Ro'yxatga elementlarni qo'shamiz\n        myList.add(\"element 1\");\n        myList.add(\"element 2\");\n        myList.add(\"element 3\");\n\n        // Ro'yxatni chiqaramiz\n        System.out.println(myList);\n    }\n}\n",
+          "v4": "import java.util.ArrayList;\n\npublic class ListExample {\n    public static void main(String[] args) {\n        ArrayList<String> myList = new ArrayList<String>();\n\n        // Ro'yxatga elementlarni qo'shamiz\n        myList.add(\"element 1\");\n        myList.add(\"element 2\");\n        myList.add(\"element 3\");\n\n        // Ro'yxatni chiqaramiz\n        System.out.println(myList);\n    }\n}\n",
+          "vtrue": 4
+        },
+        {
+          "question_text": "  Java'da dastur ichida ma'lum bir vaqt davomida kutilayotgan ishlarni to'xtatib qo'yish uchun qanday usulni ishlatish mumkin?\n\nJava'da dastur ichida kutilayotgan ishlarni to'xtatish uchun Thread.sleep metodi ishlatiladi. Uning parametri sifatida kutilayotgan vaqtni millisekundlarda kiritishingiz mumkin. ",
+          "v1": "try {\n    Thread.sleep(2000);\n} catch (InterruptedException ) {\n    e.printStackTrace();\n}\n",
+          "v2": "try {\n    Thread.sleep(2000);\n} catch (InterruptedException e) {\n    e.printStackTrace();\n}\n",
+          "v3": "try {\n    Thread.sleep(2000);\n} catch () {\n    e.printStackTrace();\n}\n",
+          "v4": "try {\n    Thread.sleep(2000);\n}  (InterruptedException e) {\n    e.printStackTrace();\n}\n",
+          "vtrue": 2
+        }
+      ],
+      "hard_test":  [
+        {
+          "question_text": "Java'da massivni yaratishning qanday usuli mavjud?\n",
+          "v1": "int kvadrat(int son) { return son * son;}",
+          "v2": "tip[] massivNomi = new tip[uzunlik];\n",
+          "v3": "tip massivNomi = new tip[uzunlik]\n",
+          "v4": "int kvadrat(int son) { return son * son}",
+          "vtrue": 1
+        },
+        {
+          "question_text": " \"Access modifier\" nima?",
+          "v1": "Binar daraxt ko'rinishidagi ma'lumotlar tuzilmasi",
+          "v2": " Massiv C++ dasturlash tilidagi katta ma'lumotlar yig'inishidir. U bir nechta o'zgaruvchanlardan tashkil topuvchi ma'lumotlar to'plamidir. Massivda har bir ma'lumotga indeks bo'yicha qulaylik bilan murojat qilinish mumkin.",
+          "v3": "Java dasturlash tilida, \"access modifier\" dastur qatorining oldida joylashgan kalit so'zlar orqali dastur qatordan foydalanish huquqini belgilaydi. Bu kalit so'zlar: public, private, protected va package-private (default) bo'lishi mumkin.",
+          "v4": "kutubxona",
+          "vtrue": 3
+        },
+        {
+          "question_text": "Java'da klassga \"getter\" va \"setter\" metodlari qanday yaratiladi?",
+          "v1": "public class Person {\n    private String ism;\n    \n     {\n        return ism;\n    }\n    \n    public void setIsm(String ism) {\n        this.ism = ism;\n    }\n}\n",
+          "v2": "public class Person {\n    private String ism;\n    \n    public String getIsm() {\n        return ism;\n    }\n    \n    public void setIsm(String ism) {\n        this.ism = ism;\n    }\n}\n ",
+          "v3": " {\n    private String ism;\n    \n    public String getIsm() {\n        return ism;\n    }\n    \n    public void setIsm(String ism) {\n        this.ism = ism;\n    }\n}\n",
+          "v4": "public class Person {\n    private String ism;\n    \n    public String getIsm() {\n        return ism;\n    }\n    \n    (String ism) {\n        this.ism = ism;\n    }\n}\n",
+          "vtrue": 2
+        }
+      ]
+    }
+  ]
+}
